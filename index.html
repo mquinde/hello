@@ -1,31 +1,154 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap -->
+    <link rel="icon" href="me.png" type="image/x-icon">
     <title>Hello World</title>
   </head>
-  <body>
-    <div class="wrapper">
-    <div class="container">
-      <header>
-        <h1 class="name">Mariana</h1>
-      </header>
-      <article>
-        <p>I'm an <a href="http://en.wikipedia.org/wiki/Open-source_software" target="_blank">open source</a> developer and designer living in Oakland, California. Far, far away from my <a href="http://en.wikipedia.org/wiki/Central_Georgia" target="_blank">East Coast US roots</a>. I work at <a href="http://www.github.com/about" target="_blank">GitHub</a>, mentor at programming events (<a href="http://www.nodeschool.io">NodeSchool.io</a>, <a href="https://github.com/blog/1805-patchwork-night" target="_blank">Patchwork</a>) and do some conferences, too.</p>
-        <p> Previously I was an <a href="http://www.bostonredevelopmentauthority.org" target="_blank">urban designer</a>, but the call of the wild open tech world would win me over.</p>
-      </article>
+<body>
+<script>
+function toggle(name) {
+    var x = document.getElementById(name);
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
 
-    <footer>
-      <ul class="meta inline-list">
-        <li><a href="mailto:to.jlord@gmail.com">to.jlord@gmail.com</a></li>
-        <li><a href="http://www.twitter.com/jllord" target="_blank">twitter/jllord</a></li>
-        <li><a href="http://www.github.com/jlord" target="_blank">github/jlord</a></li>
+<div class="background1 photo1">
+  <div class="center-block">
+    <h1>MARIANA QUINDE GARCIA</h1>
+    <h2>Developer. Bachelor of Science in Computer Science. Drexel University Class of 2018.</h2> 
+  </div>
+</div>
+<div class="full-block">
+  <h3 style="text-align:center;">About Me</h3>
+  <p> Born and raised in Mexico City, based in Philadelphia since 2013. I am currently working on a B.Sc. in Computer Science and minoring in Business Administration at Drexel University. I will be graduating in June 2018. My Current GPA is 3.75.</p>
+</div>
+
+<div class="backgroundSmall halfsie">
+  <div class="left-block" style="text-align: right">
+  <h2> What I Like</h2>
+  <ul class="simpleList">
+  <li>Thinking outside the box.</li>
+  <li>Writing clean and efficient code.</li>
+  <li>Being challenged.</li>
+  <li>Collaborative environments.</li> 
+  <li>Learning new things.</li>
+  <li>Gelato.</li>
+  </ul>
+  </div>
+  <div class="right-block" id="whatIKnow">
+  <h2>What I Know</h2>  
+  <ul class="simpleList">
+  <li> <b>Languages: </b> Java, C#, C++, Python, Objective-C, C, JavaScript, jQuery, HTML, CSS, SQL, Ruby</li>
+  <li> <b>Frameworks: </b> AngularJS, QUnit, ASP.NET, JUnit, MVC, .NET CORE, Ruby on Rails</li>
+  <li> <b>Tools: </b>Adobe Illustrator, Adobe Photoshop, Agile Development, Android Studio, Git, JIRA, Jenkins, Eclipse, Matlab, Microsoft Office, Perforce, Sublime Text, Visual Studio, WebStorm, Xcode</li>
+  <h4>*Insert anything you need me to learn*</h4>
+  </ul>          
+  </div>
+</div>
+
+<div class="backgroundSmall photo1">
+  <div class="center-block">
+    <h3>Experience</h3>
+  </div>
+</div>
+
+<div class="backgroundMedium light">
+  <div class="right-block" style="top: 20%">
+  <img src="css/tesla.jpg" alt="TeslaPhoto" style="width:100%;height:100%;">
+  </div>
+  <div class="left-block">
+  <h2>Tesla</h2>
+  <p><b> Intern in IT Applications </b></p>
+  <p><b>Fremont, CA, September 2016 - March 2017</b></p>  
+  <ul>
+  <li>Developer for Project Cash: .NET Core solution for scaling Tesla’s quote-to-cash process </li>
+  <li>Collaborated with project managers to create software documentation in Confluence </li>
+  <li>Increased unit test coverage of Project Cash by 50% </li>
+  <li>Implemented transaction handling solution to manage lack of transaction scope in .NET Core</li>
+  <li>Prepared and delivered presentations of the solution’s structure to IT department </li>
+  </ul> 
+  </div>
+ </div>
+
+ <div class="backgroundMedium dark">
+  <div class="left-block" style="top: 15%">
+  <img src="css/oracle.jpg" alt="OraclePhoto" style="width:100%;height:100%;">
+  </div>
+  <div class="right-block">
+  <h2>Oracle Primavera</h2>
+	<p><b>Applications Engineer Co-Op</b></p>
+	<p><b>Bala Cynwyd, PA, September 2015 - March 2016</b></p>
+	<ul>
+	<li>Initiated full-stack development for new core feature in Oracle Primavera Prime </li>
+	<li>Developed Web Client Page for web users to move into mobile application</li>
+	<li>Engineered and debugged front and back end features using Java, JavaScript and jQuery</li>
+	<li>Implemented client and server unit and integration testing for Prime</li>
+	<li>Organized two seminars for Oracle Women’s Leadership Philadelphia Area Chapter</li>
+	</ul> 
+  </div>
+ </div>
+
+ <div class="backgroundMedium light">
+  <div class="right-block" style="top: 20%">
+  <img src="css/sig.jpg" alt="SIGPhoto" style="width:100%;height:100%;">
+  </div>
+  <div class="left-block">
+  <h2> Susquehanna International Group</h2>
+    <p><b>Software Development Co-Op</b></p>
+    <p><b>Bala Cynwyd, PA, September 2014 - March 2015</b></p>  
+    <ul>
+    <li>Designed and implemented new WCF Service for security administration in C#</li>
+    <li>Developed new web application as front-end for security service using ASP.NET</li>
+    <li>Devised and implemented six new GUI applications for traders and technology  team</li>
+    <li>Enhanced logging and data management features of five existing applications and services</li>
+    <li>Performed unit testing over a dozen newly installed services after server redeployment</li>
+    </ul> 
+  </div>
+ </div>
+
+<div class="backgroundSmall photo1">
+  <div class="center-block">
+    <h3>Activities & Awards</h3>
+  </div>
+</div>
+
+<div class="backgroundMin light">
+<div class="middle-block">
+<ul class="simpleList wideList">
+  <li>Teaching/Lab Assistant, Drexel University College of Computing and Informatics, Spring 2017</li>
+  <li>Web and Android Developer, Gotchu App, Summer 2015 – Summer 2016</li>
+  <li>Fundraising Chair, Alpha Omega Epsilon, Beta Mu Chapter, Spring 2016 – Fall 2016</li>
+  <li>Activities Member, Women in Computing Society, Drexel University, Spring 2014 – Present</li>
+  <li>Member, Latinos for a United Campus, Drexel University, Fall 2013 – Present</li>
+  </ul>
+</div>
+</div>
+
+<div class="backgroundMin dark">
+<div class="middle-block">
+<ul class="simpleList wideList">
+  <li>Dean's List, Drexel University - Fall 2013, Winter 2014, 2015, 2016, 2017</li>
+  <li>A.J. Drexel Scholarship, Drexel University - Fall 2013 – Present</li>
+  <li>DU Endowed Scholarship, Drexel University - Fall 2013 – Present</li>
+  <li>Certificate of Excellence in Teamwork, Drexel University - Fall 2013</li>
+  </ul>
+</div>
+</div>
+
+</body>
+<footer>
+      <ul class="inline-list">
+        <li><a href="mailto:to.mqgmariana@gmail.com">to.mqgmariana@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/mquinde/" target="_blank">linkedIn/mquinde</a></li>
+        <li><a href="http://www.github.com/mquinde" target="_blank">github/mquinde</a></li>
       </ul>
-    </footer>
-  </div>
-  </div>
-  </body>
+      </footer>
 </html>

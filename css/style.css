@@ -1,23 +1,151 @@
 /* Stylez */
-body {font-family: Franklin Gothic Book, Source Sans Pro, Helvetica Neue, sans-serif; margin: 0 auto; background: #efefef; line-height: 1.8em; padding: 12px; box-sizing: border-box; color: #333;}
-body, html {height: 100%;}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+a {color: #777; text-decoration: none;}
+a:hover {border-bottom: 1px solid #333; color: #333}
+ul {padding: 0 0 0 20px;}
 
-.wrapper {box-sizing: border-box; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888; height: 100%; overflow: auto; }
+.background1, .backgroundSmall, .backgroundMedium, .backgroundMin {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.background1 {
+  min-height: 100%;
+}
+
+.backgroundSmall {
+  min-height: 55%;
+}
+
+.backgroundMedium {
+  height: 80%;
+}
+
+.backgroundMin {
+  height: 35%;
+}
+
+.photo1 {
+    opacity: 0.65;
+  background-image: url("test.jpg");
+}
+
+.light {
+  background-color: #eee;
+}
+
+.dark {
+  background-color: #333;
+    color: #fff;
+}
+
+.halfsie {
+    background: linear-gradient(90deg, #eee 50%, #fff 50%);
+}
 
 
-a {color: #777; text-decoration: none; border-bottom: 1px solid #CCFF26;}
-a:hover {border-bottom: 1px solid #CCFF26; color: #222}
-p {font-weight: 200; font-size: 20px;}
+.center-block {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
 
-.name {font-family: Playfair Display; font-size: 50px; font-weight: 900; padding-bottom: 20px;}
+.center-block h1 {
+  color: #eee;
+  font-size: 30px;
+}
 
-.container {margin: 0 auto; width: 600px; height: 400px; padding: 80px 12px; overflow: auto;}
+.center-block h2 {
+  color: #ddd;
+  font-size: 12px;
+  font-weight: lighter;;
+}
 
-.meta {text-transform: uppercase; font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .15em;}
-.meta a:hover {border-bottom: 1px solid #CCFF26; color: #333;}
+.center-block h3 {
+  color: #eee;
+  font-size: 30px;
+}
 
-.inline-list {list-style: none; margin: 0; padding: 0;}
-.inline-list li {display: inline-block;}
+.full-block {
+    color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: center;
+}
 
-footer .inline-list li {padding-right: 40px;}
-footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px;}
+.middle-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.left-block {
+  position: absolute;
+  left: 5%;
+  top: 0;
+  width: 35%;
+  text-align: justify;
+}
+
+.right-block {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  width: 35%;
+  text-align: justify;
+}
+
+.simpleList {
+    padding: 0;
+    list-style-type: none;
+    font-weight: lighter;
+}
+
+
+.wideList li { margin: 10px 0; }
+
+
+.right-block h4 {
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+
+.toggle-block {
+    width: 100%;
+    margin-top:0px;
+    display: none;
+}
+
+
+.inline-list {list-style: none; margin: 0; padding: 0; word-spacing: 2em}
+.inline-list li {display: inline-block; font-size: 11px; letter-spacing: .15em; color: #333;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .background1, .backgroundSmall, .backgroundMedium, .backgroundMin {
+        background-attachment: scroll;
+    }
+}
+
+footer {
+    position: fixed;
+    width: 100%; 
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #eee;
+    bottom: 0px; 
+    left: 0px;
+    z-index: 80;
+}
+
