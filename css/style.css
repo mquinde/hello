@@ -3,10 +3,11 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
+  font-weight: thin 100;
   color: #777;
 }
-a {color: #777; text-decoration: none;}
-a:hover {border-bottom: 1px solid #333; color: #333}
+a {color: #eee; text-decoration: none;}
+a:hover {border-bottom: 1px solid #eee; color: #eee}
 ul {padding: 0 0 0 20px;}
 
 .background1, .backgroundSmall, .backgroundMedium, .backgroundMin {
@@ -26,7 +27,7 @@ ul {padding: 0 0 0 20px;}
 }
 
 .backgroundMedium {
-  height: 70%;
+  height: 80%;
 }
 
 .backgroundMin {
@@ -34,23 +35,32 @@ ul {padding: 0 0 0 20px;}
 }
 
 .photo1 {
+    opacity: 0.;
+    background-image: url("images/ship.jpg");
+}
+
+.photo2 {
     opacity: 0.65;
-  background-image: url("test.jpg");
+  background-image: url("images/blackmarble.jpg");
 }
 
 .light {
-  background-color: #eee;
+  background-color: white;
 }
 
 .dark {
-  background-color: #333;
-    color: #fff;
+  background-color: #eee;
+  color: #fff;
+}
+
+.oxblood {
+  background-color: #4A0000;
+  color: #fff;
 }
 
 .halfsie {
-    background: linear-gradient(90deg, #eee 50%, #fff 50%);
+    background: linear-gradient(90deg, #eee 50%, #4A0000 50%);
 }
-
 
 .center-block {
   position: absolute;
@@ -58,16 +68,12 @@ ul {padding: 0 0 0 20px;}
   top: 40%;
   width: 100%;
   text-align: center;
-}
-
-.center-block h1 {
-  color: #eee;
-  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .center-block h2 {
-  color: #ddd;
-  font-size: 12px;
+  color: #fff;
+  font-size: 17px;
   font-weight: lighter;;
 }
 
@@ -77,7 +83,10 @@ ul {padding: 0 0 0 20px;}
 }
 
 .full-block {
-    color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: center;
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;text-align: center;
 }
 
 .middle-block {
@@ -96,6 +105,13 @@ ul {padding: 0 0 0 20px;}
   text-align: justify;
 }
 
+.left-block h1 {
+  font-family: 'Catamaran', sans-serif;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 400;
+}
+
 .right-block {
   position: absolute;
   right: 5%;
@@ -103,6 +119,8 @@ ul {padding: 0 0 0 20px;}
   width: 35%;
   text-align: justify;
 }
+
+
 
 .simpleList {
     padding: 0;
@@ -143,7 +161,7 @@ footer {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: #eee;
+    background: #fff;
     bottom: 0px; 
     left: 0px;
     z-index: 80;
