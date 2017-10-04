@@ -2,147 +2,181 @@
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  font-weight: thin 100;
-  color: #777;
+  font: 300 15px/1.8 "Lato", sans-serif;
+  font-weight: 300;
+  color: #000;
 }
-a {color: #eee; text-decoration: none;}
-a:hover {border-bottom: 1px solid #eee; color: #eee}
-ul {padding: 0 0 0 20px;}
 
-.background1, .backgroundSmall, .backgroundMedium, .backgroundMin {
+/* general */
+a {
+  color: #666 ; 
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid #ff9e99; 
+  color: #000
+}
+
+ul {
+  padding: 0 0 0 20px;
+  text-align: justify; 
+  padding: 0;
+  list-style-type: none;
+}
+/* end general */
+
+/* backgrounds */
+.background1, .backgroundSmall, .backgroundMedium, .backgroundMin, .backgroundLine, .title-block {
   position: relative;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 
 }
+
+.background1, .backgroundSmall, .backgroundMedium, .backgroundMin, .backgroundLine {
+  background-size: cover;
+  background-position: right;
+}
+
 .background1 {
   min-height: 100%;
 }
 
 .backgroundSmall {
-  min-height: 55%;
+  min-height: 45%;
 }
 
 .backgroundMedium {
-  height: 80%;
+  height: 70%;
 }
 
 .backgroundMin {
   height: 35%;
 }
 
+.backgroundLine {
+  height: 10%;
+}
+
 .photo1 {
-    opacity: 0.;
     background-image: url("images/ship.jpg");
+    background-repeat: no-repeat;
 }
 
 .photo2 {
-    opacity: 0.65;
-  background-image: url("images/blackmarble.jpg");
+  background-image: url("images/Tesla.jpg");
+  background-repeat: no-repeat;
+}
+
+.pink {
+  background-color: #ff9e99;
 }
 
 .light {
   background-color: white;
 }
+/* end backgrounds */
 
-.dark {
-  background-color: #eee;
-  color: #fff;
-}
-
-.oxblood {
-  background-color: #4A0000;
-  color: #fff;
-}
-
-.halfsie {
-    background: linear-gradient(90deg, #eee 50%, #4A0000 50%);
-}
-
-.center-block {
+/* title */
+.title-block {
   position: absolute;
+  height: 100%;
+  background-size: auto 100%;
+}
+
+.left {
+  width: 50%;
   left: 0;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  text-align: left;
+  background-position: left;
 }
 
-.center-block h2 {
-  color: #fff;
-  font-size: 17px;
-  font-weight: lighter;;
+.left h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 80px;
+  font-weight: 900;
 }
 
-.center-block h3 {
-  color: #eee;
-  font-size: 30px;
+.left p {
+  font-weight: 300;
 }
 
-.full-block {
-    color: #777;
-    background-color:white;
-    text-align:center;
-    padding:50px 80px;text-align: center;
-}
-
-.middle-block {
-  position: absolute;
-  left: 0;
+.right {
+  right: 0;
   top: 0;
-  width: 100%;
+  width: 50%;
+  height: 100%;
+  text-align: right;
+  background-position: right;
+}
+
+.right h2, .left h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 50px;
+  font-weight: 900;
   text-align: center;
+}
+/* end title */
+
+/* left right blocks */
+.left-block, .right-block {
+  position: absolute;
+  top: 0;
 }
 
 .left-block {
-  position: absolute;
   left: 5%;
-  top: 0;
-  width: 35%;
+  width: 44%;
   text-align: justify;
 }
-
-.left-block h1 {
-  font-family: 'Catamaran', sans-serif;
-  color: #fff;
-  font-size: 80px;
-  font-weight: 400;
-}
-
 .right-block {
+  right: 3%;
+  width: 47%;
+  text-align: left;
+}
+.left-block h1, .right-block h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.left-block h2, .right-block h2 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.left-block h3, .right-block h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+}
+/* end left right blocks */
+
+/* center block */
+.center-block {
   position: absolute;
-  right: 5%;
-  top: 0;
-  width: 35%;
-  text-align: justify;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
-
-
-.simpleList {
-    padding: 0;
-    list-style-type: none;
-    font-weight: lighter;
+.center-block ul{
+  text-align: center;
 }
 
-
-.wideList li { margin: 10px 0; }
-
-
-.right-block h4 {
-  font-size: 10px;
-  font-weight: lighter;
+.center-block li{
+  text-align: center;
+  margin: 10px 0;
 }
+/* end center block */
 
-
-.toggle-block {
-    width: 100%;
-    margin-top:0px;
-    display: none;
-}
 
 
 .inline-list {list-style: none; margin: 0; padding: 0; word-spacing: 2em}
@@ -150,7 +184,7 @@ ul {padding: 0 0 0 20px;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .background1, .backgroundSmall, .backgroundMedium, .backgroundMin {
+    .background1, .backgroundSmall, .backgroundMedium, .backgroundMin, .backgroundLine, .title-block {
         background-attachment: scroll;
     }
 }
